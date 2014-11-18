@@ -1,0 +1,50 @@
+var bind = Function.prototype.call.bind(Function.prototype.bind);
+
+// Wrap your mind around that. Think about it.
+// What does it do? We are flipping "call",
+// returning a function that takes a function
+// and a context and returning a fully bound function.
+
+// Bringing back our original example.
+var context = { foo: "bar" };
+function returnFoo () {
+  return this.foo;
+}
+
+// And using our new amazing "bind".
+var amazing = bind(returnFoo, context);
+amazing(); // => bar
+
+
+
+
+function isUndefined(x){return typeof(x)==='undefined';}
+
+var Listeners=[];
+//
+function onEvent(name,node,action,capture){
+
+ var s=name, e=node, k=Boolean(capture), m=Listeners, f=m[action]=function(o){action(o,e);};
+ function detach(v){e.removeEventListener(s,f,isUndefined(v)?k:v);m.splice(m.indexOf(f),1);return e;}
+
+ detach(k).addEventListener(s,f,k);
+
+}
+//
+function zz1(evt,par){console.log('ok1');console.dir(Listeners);alert(par,evt);}
+function zz2(evt,par){console.log('ok2');console.dir(Listeners);alert(par,evt);}
+onEvent('click',document,zz1);
+onEvent('click',document,zz1);
+
+
+
+
+
+x=Listeners[s]=function(o){f(o,e,detach)}
+
+[e][f]
+.bind(this,'bla')
+f.bind(this)
+f()
+function isFunction(x){return x instanceof Function}
+function a(o){f(e,rem,o);}

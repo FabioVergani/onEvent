@@ -48,3 +48,104 @@ f.bind(this)
 f()
 function isFunction(x){return x instanceof Function}
 function a(o){f(e,rem,o);}
+
+
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <title>-</title>
+  <link rel='stylesheet' href=''>
+  //theNode,theDetacher,theEventObject
+ if(d.insertBefore(od.doctype.cloneNode(false),h)){
+	if(d.replaceChild(hc,h)){
+		w.resizeTo(ow.outerWidth,ow.outerHeight);
+		 //<todo>here:samescroll
+		w.focus();
+	};
+ };
+<script>
+document.log=console.log.bind(console);
+//
+function Listen(s,e,f){
+
+ function x(o){f(e,---,o);}
+ 
+ function detach(){e.removeEventListener(s,x);return e;}
+ 
+ detach().addEventListener(s,a);
+}
+//
+function onDom(e,f){Listen('DOMContentLoaded',e,f);}
+//
+function prependnode(e,x){return e.insertBefore(x,e.firstChild);}//theNodeParent,theNodeChild;return x
+
+parentElement.insertBefore(newElement, referenceElement);
+
+//
+function clonepage(originalDocument){
+ var d=originalDocument, w=d.defaultView,
+
+ //w=ow.open(), d=od||w.document, h=d.documentElement;
+};
+
+
+
+//
+function handleFragment(x){
+ var e=x
+ return e;
+};
+
+//
+function makeSnapshot(theDocument,detach,theEventObject){
+ detach('"ondomloaded/makePageSnapshot" listener..');
+ var d=theDocument, h=d.documentElement, hc=handleFragment(d.createDocumentFragment().appendChild(h.cloneNode(true)));
+ hc
+ //
+
+};
+//-------------------------------------------------
+onDom(document,makeSnapshot);
+
+
+function prepend(x,e) {
+	return this.insertBefore(frag.apply(this, arguments), this.firstChild);
+}
+
+
+
+
+ /*
+
+
+ var log=d.log,
+ var w2=w.open(), d2=w2.document, h2=d2.documentElement;
+ if(d2.insertBefore(d.doctype.cloneNode(false),h2)){
+	if(d2.replaceChild(hc,h2)){
+		w2.resizeTo(w.outerWidth,w.outerHeight);
+		 //<todo>here:samescroll
+		w2.focus();
+	};
+ };
+ */
+
+
+
+//log('e isSameNode html?',e.isSameNode(html),'Reference\ne isEqualNode html?',e.isEqualNode(html),'Object');
+/*
+ console.dir(o.doctype);
+ console.dir(d.doctype);
+ console.dir(fragment);
+*/
+//console.log();
+//var at=Function.prototype.bind.call();
+//DOM fully loaded and parsed
+//console.log();
+</script>
+document.doctype.parentNode.replaceChild(newDoctype,document.doctype);
+</head>
+<body>
+zzz
+</body>
+</html>
